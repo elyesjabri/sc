@@ -1,0 +1,10 @@
+CREATE USER 'dbamaster'@'localhost' IDENTIFIED BY 'dbamaster_estyaserver';
+GRANT ALL PRIVILEGES ON *.* TO 'dbamaster'@'localhost' WITH GRANT OPTION;
+CREATE DATABASE IF NOT EXISTS `db_estya`;
+GRANT ALL ON `db_estya`.* TO 'dbamaster'@'%';
+CREATE DATABASE IF NOT EXISTS `db_adg`;
+GRANT ALL ON `db_adg`.* TO 'dbamaster'@'%';
+CREATE DATABASE IF NOT EXISTS `db_eduhorizons`;
+GRANT ALL ON `db_eduhorizons`.* TO 'dbamaster'@'%';
+CREATE DATABASE IF NOT EXISTS `db_training`;
+GRANT ALL ON `db_training`.* TO 'dbamaster'@'%';
